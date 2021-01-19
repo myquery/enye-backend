@@ -7,6 +7,12 @@ const app = express();
 
 const PORT = process.env.PORT || 8000;
 
+//default root endpoint
+
+app.get('/', (req, res)=> {
+    res.send("Welcome, to access the rates endpoint use: /api/rates?base=CZK&currency=EUR,GBP,USD ")
+})
+
 
 //api endpoint
 app.get('/api/rates', (req, res)=>{
