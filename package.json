@@ -7,8 +7,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "webpack --mode production"
+    "start": "webpack serve --mode development --env development --hot --open --port $PORT",
+    "build": "webpack --mode production",
+    "heroku-postbuild": "npm build"
   },
   "repository": {
     "type": "git",
