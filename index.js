@@ -5,6 +5,8 @@ const url = require("url");
 //setup server instance
 const app = express();
 
+const PORT = process.env.PORT || 8000;
+
 
 //api endpoint
 app.get('/api/rates', (req, res)=>{
@@ -34,4 +36,4 @@ app.get('/api/rates', (req, res)=>{
 })
 
 
-app.listen(8000, () => console.log('enye backend server is running...'));
+app.listen(PORT, () => console.log('enye backend server is running...'));
