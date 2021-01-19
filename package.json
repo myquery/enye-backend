@@ -1,14 +1,11 @@
 {
   "name": "enye-backend",
   "version": "1.0.0",
-  "engines": {
-    "node": "10.x"
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --env development --hot --open --port $PORT",
-    "build": "webpack --mode production",
+    "build": "npm i -dev && webpack --mode production",
     "heroku-postbuild": "npm build"
   },
   "repository": {
